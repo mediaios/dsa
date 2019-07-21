@@ -11,6 +11,7 @@
 		3D62E20F22E0C4C700E4A215 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D62E20E22E0C4C700E4A215 /* main.c */; };
 		3D62E21822E0C4EC00E4A215 /* MISeqList.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D62E21722E0C4EC00E4A215 /* MISeqList.c */; };
 		3D62E21F22E0CE8A00E4A215 /* MIQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D62E21E22E0CE8A00E4A215 /* MIQueue.c */; };
+		AA1D3BA922E3FB5900FAC58E /* MISearch.c in Sources */ = {isa = PBXBuildFile; fileRef = AA1D3BA822E3FB5900FAC58E /* MISearch.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		3D62E21722E0C4EC00E4A215 /* MISeqList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MISeqList.c; sourceTree = "<group>"; };
 		3D62E21D22E0CE8A00E4A215 /* MIQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIQueue.h; sourceTree = "<group>"; };
 		3D62E21E22E0CE8A00E4A215 /* MIQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MIQueue.c; sourceTree = "<group>"; };
+		AA1D3BA722E3FB5900FAC58E /* MISearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MISearch.h; sourceTree = "<group>"; };
+		AA1D3BA822E3FB5900FAC58E /* MISearch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MISearch.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 		3D62E20D22E0C4C700E4A215 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				AA1D3BA622E3FB3E00FAC58E /* search */,
 				3D078D6522E3119C00F9396C /* sort */,
 				3D62E21922E0CC4F00E4A215 /* queue */,
 				3D62E21522E0C4D000E4A215 /* seqlist */,
@@ -99,6 +103,15 @@
 				3D62E21E22E0CE8A00E4A215 /* MIQueue.c */,
 			);
 			path = queue;
+			sourceTree = "<group>";
+		};
+		AA1D3BA622E3FB3E00FAC58E /* search */ = {
+			isa = PBXGroup;
+			children = (
+				AA1D3BA722E3FB5900FAC58E /* MISearch.h */,
+				AA1D3BA822E3FB5900FAC58E /* MISearch.c */,
+			);
+			path = search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +174,7 @@
 				3D62E21F22E0CE8A00E4A215 /* MIQueue.c in Sources */,
 				3D62E21822E0C4EC00E4A215 /* MISeqList.c in Sources */,
 				3D078D6822E311B100F9396C /* MISort.c in Sources */,
+				AA1D3BA922E3FB5900FAC58E /* MISearch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

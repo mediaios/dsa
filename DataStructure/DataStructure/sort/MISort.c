@@ -9,6 +9,7 @@
 #include "MISort.h"
 
 
+
 void swap(int array[],int a,int b)
 {
     array[a] ^= array[b];
@@ -105,27 +106,28 @@ void selectSort(int array[],int size)
     printArray(array, size);
 }
 
+
 void quickSortImp(int array[],int begin,int end)
 {
     if (begin < end) {
         int i = begin,j = end;
-        int vot = array[i];
-        while (i != j) {  // 一趟排序
-            while (i <j && vot <= array[j])
+        int vot  = array[i];
+        while (i != j) {  // i==j时，本次排序完成
+            while (i < j && vot < array[j])  // 移动基准值后面的游标
                 j--;
-            if (i < j)
-                array[i++] = array[j];  // 把后面的小元素向前移动
-            while (i < j && array[i] <= vot)
+            if (i < j)  // 当基准值有侧有小元素时
+                array[i++] = array[j];   // 将小元素放到基准值前面
+            while (i < j && vot > array[i])  // 移动基准值前面的游标
                 i++;
-            if (i < j)   // 把大元素向后移动
-                array[j--] = array[i];
+            if (i < j)   // 此时基准值前面有大元素
+                array[j--] = array[i];  // 将大元素放到基准值右侧
         }
         array[i] = vot;
         quickSortImp(array, begin, j-1);
         quickSortImp(array, i+1, end);
     }
-    
 }
+
 
 void quickSort(int array[],int size)
 {
