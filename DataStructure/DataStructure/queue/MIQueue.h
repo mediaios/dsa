@@ -10,26 +10,34 @@
 #define MIQueue_h
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
 
+#define MAX_QUEUE_SIZE   100
 
-typedef struct MINode
+typedef struct MIQueueNode
 {
-    char *data;
-    struct MINode *next;
-}MINode;
+    int data;
+    struct MIQueueNode *next;
+}MIQueueNode;
 
 typedef struct MIQueue
 {
     int size;
-    MINode *front;
-    MINode *rear;
+    MIQueueNode *front;
+    MIQueueNode *rear;
 }MIQueue;
 
-MIQueue *CreateQueue();
-int isFull(MIQueue *q);
-void Add(MIQueue *q, MINode *node);
-int IsEmpty(MIQueue *q);
-void PrintQueue(MIQueue *q);
+
+MIQueue *createQueue(void);
+int inQueue(MIQueue *q,int data);
+int  queueOut(MIQueue *queue,int *data);
+int isQueueFull(MIQueue *q);
+int isQueueEmpty(MIQueue *q);
+void printQueue(MIQueue *queue);
+void destoryQueue(MIQueue *queue);
+
+void testQueue();
 
 
 

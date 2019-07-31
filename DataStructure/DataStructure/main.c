@@ -7,9 +7,11 @@
 //
 
 #include <stdio.h>
-#include "MISeqList.h"
 #include "MISort.h"
 #include "MISearch.h"
+#include "MIStack.h"
+#include "MIQueue.h"
+#include "MISeqList.h"
 
 
 void swap2(int array[],int a,int b)
@@ -118,7 +120,17 @@ void quickSort2(int array[],int size)
 int main(int argc, const char * argv[]) {
     // insert code here...
     
-    int array[] = {2,45,3,67,10,4,109,0,-1,11};
+    /*** 测试栈 ***/
+//    test();
+    
+    /*** 测试队列 ***/
+    testQueue();
+    
+    
+    
+    
+    
+//    int array[] = {2,45,3,67,10,4,109,0,-1,11};
 //    bubleSort2(array, 10);
 //    insertSort2(array, 10);
 //    shellSort2(array, 10);
@@ -132,20 +144,20 @@ int main(int argc, const char * argv[]) {
 //    selectSort(array, 10);
 //    quickSort(array, 10);
     
+//
+//    // 查找
+//    int sArray[] = {1,2,3,4,5,6,7,8,9,10};
+//    int index = binarySearch(sArray, 10, 5);
+//    printf("5在序列中的位置为:%d \n",index);
+//    return 0;
     
-    // 查找
-    int sArray[] = {1,2,3,4,5,6,7,8,9,10};
-    int index = binarySearch(sArray, 10, 5);
-    printf("5在序列中的位置为:%d \n",index);
-    return 0;
-    
-    SeqList sqList = SeqListInit();
-    SeqListInsert(sqList, 1, 10);
-    SeqListInsert(sqList, 2, 10);
-    SeqListInsert(sqList, 3, 10);
-    SeqList newSqL = SeqListInsert(sqList, 4, 10);
-//    SeqListInsert(sqList, 1, 20);
-    ShowData(newSqL);
+//    SeqList sqList = SeqListInit();
+//    SeqListInsert(sqList, 1, 10);
+//    SeqListInsert(sqList, 2, 10);
+//    SeqListInsert(sqList, 3, 10);
+//    SeqList newSqL = SeqListInsert(sqList, 4, 10);
+////    SeqListInsert(sqList, 1, 20);
+//    ShowData(newSqL);
     
     return 0;
 }
