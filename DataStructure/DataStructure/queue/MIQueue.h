@@ -37,7 +37,7 @@ int isQueueEmpty(MIQueue *q);
 void printQueue(MIQueue *queue);
 void destoryQueue(MIQueue *queue);
 
-void testQueue();
+void testQueue(void);
 
 
 

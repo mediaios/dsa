@@ -117,14 +117,18 @@ void quickSort2(int array[],int size)
     printArray2(array, size);
 }
 
+
 int main(int argc, const char * argv[]) {
     // insert code here...
+    
+    /*** 测试数组 ***/
+
     
     /*** 测试栈 ***/
 //    test();
     
     /*** 测试队列 ***/
-    testQueue();
+//    testQueue();
     
     
     

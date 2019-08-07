@@ -12,6 +12,7 @@
 		3D62E21822E0C4EC00E4A215 /* MISeqList.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D62E21722E0C4EC00E4A215 /* MISeqList.c */; };
 		3D62E21F22E0CE8A00E4A215 /* MIQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D62E21E22E0CE8A00E4A215 /* MIQueue.c */; };
 		AA1D3BA922E3FB5900FAC58E /* MISearch.c in Sources */ = {isa = PBXBuildFile; fileRef = AA1D3BA822E3FB5900FAC58E /* MISearch.c */; };
+		AA57B74722FACAE500B2B86B /* array_01.c in Sources */ = {isa = PBXBuildFile; fileRef = AA57B74622FACAE500B2B86B /* array_01.c */; };
 		AA71190022F172120097A040 /* MIStack.c in Sources */ = {isa = PBXBuildFile; fileRef = AA7118FF22F172120097A040 /* MIStack.c */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		3D62E21E22E0CE8A00E4A215 /* MIQueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MIQueue.c; sourceTree = "<group>"; };
 		AA1D3BA722E3FB5900FAC58E /* MISearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MISearch.h; sourceTree = "<group>"; };
 		AA1D3BA822E3FB5900FAC58E /* MISearch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MISearch.c; sourceTree = "<group>"; };
+		AA57B74522FACAE500B2B86B /* array_01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = array_01.h; sourceTree = "<group>"; };
+		AA57B74622FACAE500B2B86B /* array_01.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = array_01.c; sourceTree = "<group>"; };
 		AA7118FE22F172120097A040 /* MIStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIStack.h; sourceTree = "<group>"; };
 		AA7118FF22F172120097A040 /* MIStack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MIStack.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +84,7 @@
 		3D62E20D22E0C4C700E4A215 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				AA57B74322FACABA00B2B86B /* leet_code */,
 				AA1D3BA622E3FB3E00FAC58E /* search */,
 				3D078D6522E3119C00F9396C /* sort */,
 				AA7118FD22F171D50097A040 /* stack */,
@@ -116,6 +120,23 @@
 				AA1D3BA822E3FB5900FAC58E /* MISearch.c */,
 			);
 			path = search;
+			sourceTree = "<group>";
+		};
+		AA57B74322FACABA00B2B86B /* leet_code */ = {
+			isa = PBXGroup;
+			children = (
+				AA57B74422FACAC800B2B86B /* array */,
+			);
+			path = leet_code;
+			sourceTree = "<group>";
+		};
+		AA57B74422FACAC800B2B86B /* array */ = {
+			isa = PBXGroup;
+			children = (
+				AA57B74522FACAE500B2B86B /* array_01.h */,
+				AA57B74622FACAE500B2B86B /* array_01.c */,
+			);
+			path = array;
 			sourceTree = "<group>";
 		};
 		AA7118FD22F171D50097A040 /* stack */ = {
@@ -184,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D62E20F22E0C4C700E4A215 /* main.c in Sources */,
+				AA57B74722FACAE500B2B86B /* array_01.c in Sources */,
 				3D62E21F22E0CE8A00E4A215 /* MIQueue.c in Sources */,
 				3D62E21822E0C4EC00E4A215 /* MISeqList.c in Sources */,
 				3D078D6822E311B100F9396C /* MISort.c in Sources */,
