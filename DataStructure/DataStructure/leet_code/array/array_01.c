@@ -2,8 +2,8 @@
 //  array_01.c
 //  DataStructure
 //
-//  Created by ethan on 2019/8/7.
-//  Copyright © 2019 Maxwell. All rights reserved.
+//  Created by mediaios on 2019/8/7.
+//  Copyright © 2019 mediaios. All rights reserved.
 //
 
 #include "array_01.h"
